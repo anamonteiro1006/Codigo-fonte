@@ -1,0 +1,301 @@
+/* Estilo Global */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 0;
+    color: #333;
+    margin: 0;
+    justify-content: center;
+}
+main {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+
+/* Cabeçalho */
+.header {
+    background-color: #00426B;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.logo-text h1 {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo-text p {
+    font-size: 14px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Navegação */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    background-color: #003B56;
+    color: #fff;
+}
+.nav-items {
+    margin-left: 20px; /* Adiciona um espaçamento de 20px entre a logo e os itens */
+}
+
+/* Responsividade - centralização do navbar */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo-text h1 {
+        font-size: 24px;
+    }
+
+    .logo-text p {
+        font-size: 12px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;  /* Centraliza os itens dentro do ul */
+        width: 100%;  /* Garante que o ul ocupe a largura total disponível */
+        padding-left: 0;
+    }
+
+    .navbar ul li a {
+        padding: 10px 15px;
+        font-size: 14px;
+        width: 100%;  /* Garante que os links ocupem toda a largura do menu */
+        text-align: center;  /* Garante que o texto dentro de cada link seja centralizado */
+    }
+}
+/* Formulário */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os elementos horizontalmente */
+}
+
+/* Labels e inputs/textarea */
+form label {
+    font-weight: bold;
+    color: #00426B;
+    margin-bottom: 5px; /* Adiciona espaço entre o label e o campo */
+}
+
+/* Inputs e textarea */
+form input[type="text"],
+form textarea {
+    width: 100%; /* Garante que os campos ocupem a largura do contêiner */
+    max-width: 800px; /* Define um limite de largura para não ficar muito largo */
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura */
+}
+
+/* Botão */
+form button {
+    width: 100%;
+    max-width: 500px; /* Define um limite de largura para o botão */
+    padding: 12px;
+    background-color: #00426B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+form button:hover {
+    background-color: #003B5C;
+}
+
+
+/* Quadro de mensagens */
+.quadro-de-mensagens {
+    margin-top: 20px;
+}
+
+/* Container da mensagem e resposta */
+.mensagem-container {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.mensagem p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Botões de responder e enviar resposta */
+button {
+    padding: 10px;
+    background-color: #00426B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #003B5C;
+}
+.responder-btn, .enviar-btn {
+    margin-top: 10px;
+}
+.resposta {
+    background-color: #e6f0fa;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.resposta-input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+/* rodapé cmc */
+footer{
+    background-color: #00426B;
+    color: White;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    min-height: 15vh;
+    margin-top: auto;
+    font-size: 14px;
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+footer img {
+    max-width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+/* rodapé fim */
+
+/* Responsividade */
+@media (max-width: 768px) {
+    form, .mensagem-container {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    form button, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Estilo geral das respostas */
+.resposta {
+    padding: 10px;
+    margin: 10px 0; /* Espaçamento entre respostas */
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid #ddd; /* Borda para separar visualmente */
+}
+
+/* Cor para as respostas em posição par */
+.resposta-cor1 {
+    background-color: #e6f7ff;
+    color: #005780;
+}
+
+/* Cor para as respostas em posição ímpar */
+.resposta-cor2 {
+    background-color: #fff6e6;
+    color: #804a00;
+}
+/* Estilo geral das respostas */
+.resposta {
+    padding: 10px;
+    margin: 10px 0; /* Espaçamento entre respostas */
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid #ddd; /* Borda para separar visualmente */
+}
+
+/* Cor para as respostas em posição par */
+.resposta-cor1 {
+    background-color: #e6f7ff;
+    color: #005780;
+}
+
+/* Cor para as respostas em posição ímpar */
+.resposta-cor2 {
+    background-color: #fff6e6;
+    color: #804a00;
+}
